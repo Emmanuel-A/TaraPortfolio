@@ -3,33 +3,45 @@
   <head></head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hello World</title>
-  <meta name="description" content="Hello World">
+  <title>Tara Ocansey</title>
+  <meta name="description" content="Portfolio site for Fashion Stylist, Tara Ocansey ">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
   <body></body>
   <div class="wrapper">
     <header class="header">
+      <div class="logo">
+        <p><a href="/">Tara Ocansey</a></p>
+      </div>
       <ul class="nav">
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/resume">Resume</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </header>
     <div class="main"></div>
-    <footer class="footer">
-      <p>Copyright &copy; 2014</p>
-    </footer>
   </div>
   <!-- ------------------------------->
   <!-- Templates-->
   <!-- ------------------------------->
   <script id="home" type="text/template">
-    <div class="page home">{{{content}}}</div>
+    <div class="page home">
+      <div id="home-banner-img"></div>
+    </div>
     
   </script>
   <script id="about" type="text/template">
     <div class="page about">{{{content}}}</div>
+    
+  </script>
+  <script id="portfolio" type="text/template">
+    <div class="page portfolio">{{{content}}}</div>
+    
+  </script>
+  <script id="resume" type="text/template">
+    <div class="page resume">{{{content}}}</div>  
     
   </script>
   <script id="contact" type="text/template">

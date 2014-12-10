@@ -7,9 +7,9 @@ html
 
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
 
-  title Hello World
+  title Tara Ocansey
 
-  meta(name="description", content="Hello World")
+  meta(name="description", content="Portfolio site for Fashion Stylist, Tara Ocansey ")
 
   meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
@@ -21,30 +21,45 @@ html
 
     header.header
 
-\
+      div.logo
+
+        p: a(href="/") Tara Ocansey
+
       ul.nav
 
         li: a(href="/") Home
 
         li: a(href="/about") About
 
+        li: a(href="/portfolio") Portfolio
+
+        li: a(href="/resume") Resume
+
         li: a(href="/contact") Contact
 
     div.main
 
-    footer.footer
+    //- footer.footer
 
-      p Copyright &copy; 2014
+    //-   p Copyright &copy; 2014
 
   // -----------------------------
   // Templates
   // -----------------------------
 
   script#home(type="text/template").
-    <div class="page home">{{{content}}}</div>
+    <div class="page home">
+      <div id="home-banner-img"></div>
+    </div>
 
   script#about(type="text/template").
     <div class="page about">{{{content}}}</div>
+
+  script#portfolio(type="text/template").
+    <div class="page portfolio">{{{content}}}</div>
+
+  script#resume(type="text/template").
+    <div class="page resume">{{{content}}}</div>  
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}</div>

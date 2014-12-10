@@ -15,6 +15,8 @@ jQuery(function($) {
     routes: {
       '' : 'home',
       'about': 'about',
+      'portfolio': 'portfolio',
+      'resume': 'resume',
       'contact': 'contact'
     },
 
@@ -28,6 +30,18 @@ jQuery(function($) {
     about: function() {
       console.log('Navigating to About Page');
       App.views['about'].render();
+    },
+
+     // Portfolio Route
+    portfolio: function() {
+      console.log('Navigating to Portfolio Page');
+      App.views['portfolio'].render();
+    },
+
+     // Resume Route
+    resume: function() {
+      console.log('Navigating to Resume Page');
+      App.views['resume'].render();
     },
 
     // Contact Route
@@ -50,7 +64,9 @@ jQuery(function($) {
     // Setup views
     this.views = {
       home: new HomeView(),
-      about: new AboutView(),
+      about: new AboutView(), 
+      portfolio: new PortfolioView(), 
+      resume: new ResumeView(), 
       contact: new ContactView()
     };
 
@@ -77,7 +93,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<p>FASHION STYLIST</p>'
+        // content: '<img src="../assets/images/home-banner-01.png" alt="banner image" style="width: 100%;"/>'
       });
 
     },
@@ -116,7 +132,85 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>About Page</h1>'
+        content: '<p>About Page</p>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Portfolio View
+  // -----------------------------
+
+  var PortfolioView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#portfolio',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        content: '<p>Portfolio Page</p>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Resume View
+  // -----------------------------
+
+  var ResumeView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#resume',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        content: '<p>Resume Page</p>'
       });
 
     },
@@ -155,7 +249,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Contact Page</h1>'
+        content: '<p>Contact Page</p>'
       });
 
     },
@@ -186,11 +280,9 @@ jQuery(function($) {
   // Navigation Links
   // -----------------------------
 
-  $(document).delegate('a', 'click', function(e) {
-    e.preventDefault();
-    App.router.navigate($(this).attr('href'), { trigger: true });
-
+ $(document).delegate('a', 'click', function(e) {
+    var url = $(this).attr('href') || '#';
+    var isLocal = url.match(/^#/)
+    if(isLocal) { e.preventDefault(); App.router.navigate($(this).attr('href'), { trigger: true }); }
   });
-
-
 });

@@ -1,8 +1,8 @@
-/* line 7, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 8, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 * {
   box-sizing: border-box; }
 
-/* line 10, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 11, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 body {
   padding: 0;
   margin: 0;
@@ -10,47 +10,69 @@ body {
   font-family: sans-serif;
   color: #555; }
 
-/* line 17, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 18, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 a {
   text-decoration: none;
   display: inline-block;
-  color: #555; }
+  color: #37725e; }
 
-/* line 23, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 24, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 .header, .main, .footer {
   width: 100%;
   display: block;
   clear: both;
   float: left; }
 
-/* line 30, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
-.header {
-  padding: 20px;
-  border-bottom: 1px solid #efefef; }
+/* line 31, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
 
-/* line 35, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 36, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+.header {
+  padding: 20px; }
+
+/* line 39, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+.logo {
+  margin: 0 0 -35px 0;
+  width: 120px; }
+  /* line 43, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+  .logo p {
+    background: url(../images/logo.png) no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    height: 100px; }
+
+/* line 50, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 .nav {
   margin: 0;
-  padding: 0; }
-  /* line 39, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  padding: 0;
+  float: right; }
+  /* line 56, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
   .nav li {
     margin: 0;
     padding: 0;
     display: inline-block;
     list-style: none; }
-    /* line 45, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 62, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
     .nav li a {
       padding: 5px 10px; }
 
-/* line 49, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 66, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 .main {
-  padding: 20px;
-  border-bottom: 1px solid #efefef; }
+  padding: 20px; }
+  /* line 69, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+  .main .home {
+    width: 100%;
+    height: 500px;
+    background: url(../images/home-banner-01.png) no-repeat;
+    background-position: center;
+    background-size: 100%; }
 
-/* line 54, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+/* line 79, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 57, /Users/amponsah/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 82, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;
