@@ -20,13 +20,13 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="http://taraconrad.tumblr.com">Blog</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </header>
     <div class="main"></div>
     <footer class="footer">
-      <p>Copyright &copy; 2014</p>
+      <p>Tara Ocansey &copy; 2014</p>
     </footer>
   </div>
   <!-- ------------------------------->
@@ -70,11 +70,22 @@
   </script>
   <script id="contact" type="text/template">
     <div class="page contact">
+      {{{contactHeading}}}
+       <div id="icons">
+        <ul>
+          {{#icons}}
+            <li>
+              <a href="{{link}}"><img src="{{src}}"></a>
+            </li>
+          {{/icons}}
+        </ul>  
+      </div> 
       <form>
-        <p>Name:</p>
-        <p>Email:</p>
-        <p>Message:</p>
+        <input type="text" placeholder="Name"><br>
+        <input type="text" placeholder="Email"><br>
+        <input id="messageField" placeholder="Message" type="text">
       </form>
+      <a id="sendBtn" href="#">Send</a>
     </div>  
     
   </script>

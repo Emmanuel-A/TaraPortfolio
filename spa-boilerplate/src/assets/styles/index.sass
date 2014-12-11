@@ -29,6 +29,9 @@ a
   display: inline-block
   color: $linkColor
 
+  &:hover
+    text-decoration: underline
+
 // -----------------------------
 // App Specific
 // -----------------------------
@@ -95,6 +98,10 @@ a
   margin: -20px 0 0 0
   border-bottom: 1px solid $lightColor
 
+  // -----------------------------
+  // Home
+  // -----------------------------
+
   .home
 
     #home-banner-img
@@ -116,6 +123,10 @@ a
       color: $linkColor;
       text-transform: uppercase;
       letter-spacing: 3px
+
+  // -----------------------------
+  // About
+  // -----------------------------
 
   .about
     // background: url(../images/ticks.png) repeat
@@ -155,6 +166,79 @@ a
           font-size: 16px
           color: $linkColor 
 
+  // -----------------------------
+  // Contact
+  // -----------------------------
+
+  .contact
+    text-align: center
+    margin: 0 auto
+
+    h2
+      color: #d3a176
+      font-family: 'Allura', cursive
+      font-size: 30px
+
+    .hello
+      font-family: 'Allura', cursive
+      font-size: 33px
+
+    #icons
+      width: 35%  
+      margin: 0 auto
+      ul  
+
+        li
+          list-style: none
+          float: left
+          padding: 0 25px 0 0
+
+          img  
+            width: 60px
+            opacity: 0.3
+            &:hover
+              border-radius: 50% 
+              border: 3px solid teal
+              cursor: pointer
+
+
+    form
+      clear: both
+      font-weight: lighter
+      font-family: 'Overlock', cursive
+      font-size: 16px
+      color: $color 
+      padding: 30px 0 0 0
+      
+      input
+        height: 30px
+        width: 50%
+        padding: 0 0px 0 10px
+        margin: 0 0 10px 0  
+        font-weight: lighter
+        font-family: 'Overlock', cursive
+        font-size: 16px
+        color: $color 
+        outline: 0
+
+      #messageField
+        padding: 12px 0 130px 10px
+
+      .message
+        margin: 0 0 0 -23px
+
+    #sendBtn
+        background: #deb2c0
+        color: #ffffff
+        font-size: 18px
+        font-weight: bolder   
+        padding: 10px 100px 
+        margin: 10px 0 0 0
+        &:hover
+          background: #555
+          opacity: 0.3
+          text-decoration: none
+  
 // -----------------------------
 // Footer
 // -----------------------------

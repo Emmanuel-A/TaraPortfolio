@@ -266,7 +266,21 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<p>Contact Page</p>'
+        contactHeading: '<h2><span class="hello">Connect with me!</span></h2>',
+        icons: [
+          {
+            src: "../assets/images/fb-icon.png",
+            link: "https://www.facebook.com/tara.conrad.12?fref=ts"
+          },
+          {
+            src: "../assets/images/twitter-icon.png",
+            link: "https://twitter.com/RelaxLive"
+          },
+          {
+            src: "../assets/images/linkedin-icon.png",
+            link: "https://www.linkedin.com/in/taraocansey"  
+          }
+        ]
       });
 
     },
