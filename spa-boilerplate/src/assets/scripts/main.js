@@ -16,7 +16,7 @@ jQuery(function($) {
       '' : 'home',
       'about': 'about',
       'portfolio': 'portfolio',
-      'resume': 'resume',
+      'blog': 'blog',
       'contact': 'contact'
     },
 
@@ -38,10 +38,10 @@ jQuery(function($) {
       App.views['portfolio'].render();
     },
 
-     // Resume Route
-    resume: function() {
-      console.log('Navigating to Resume Page');
-      App.views['resume'].render();
+     // Blog Route
+    blog: function() {
+      console.log('Navigating to Blog Page');
+      App.views['blog'].render();
     },
 
     // Contact Route
@@ -66,7 +66,7 @@ jQuery(function($) {
       home: new HomeView(),
       about: new AboutView(), 
       portfolio: new PortfolioView(), 
-      resume: new ResumeView(), 
+      blog: new BlogView(), 
       contact: new ContactView()
     };
 
@@ -132,9 +132,25 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        profilePic: '<img src="../assets/images/profile-pic-02.png" alt="profile pic" style="width: 170px"/>'
+        profilePic: '<img src="../assets/images/profile-pic-02.png" alt="profile pic" style="width: 170px"/>',
+        aboutHeading: '<h2><span class="hello">Hello</span>, I am Tara Ocansey.</h2>',
+        aboutParOne: '<p>I am a freelance Fashion Stylist living in Toronto, Canada.</p>',
+        aboutParTwo: '<p>I am a creative, hardworking and motivated individual with progressive experience as well as developed strengths in the following areas:</p>',
+        icons: [
+          {
+            src: "../assets/images/dress.png",
+            description: "Fashion Styling"
+          },
+          {
+            src: "../assets/images/mannequin-02.png",
+            description: "Visual Merchandising"
+          },
+          {
+            src: "../assets/images/trends.png",
+            description: "Trend Forecasting"
+          }
+        ]
       });
-
     },
 
     // Our Render Function
@@ -190,16 +206,16 @@ jQuery(function($) {
   });
 
   // -----------------------------
-  // Resume View
+  // Blog View
   // -----------------------------
 
-  var ResumeView = Backbone.View.extend({
+  var BlogView = Backbone.View.extend({
 
     // Our Container Element
     el: $('.main'),
 
     // Our template ID
-    template: '#resume',
+    template: '#blog',
 
     // Initialize View
     initialize: function() {
@@ -210,7 +226,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<p>Resume Page</p>'
+        content: '<p>Blog Page</p>'
       });
 
     },

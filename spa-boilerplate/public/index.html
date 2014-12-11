@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Overlock" rel="stylesheet" type="text/css">
   <body></body>
   <div class="wrapper">
     <header class="header">
@@ -18,7 +20,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/resume">Resume</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </header>
@@ -40,7 +42,20 @@
   <script id="about" type="text/template">
     <div class="page about">
       {{{profilePic}}}
-      <p><span id="about-heading">Helllo</span>, I am Tara Ocansey</p>
+      {{{aboutHeading}}}
+      {{{aboutParOne}}}      
+      {{{aboutParTwo}}} 
+      
+      <div id="icons">
+        <ul>
+          {{#icons}}
+            <li>
+              <img src="{{src}}" />
+              <h3>{{description}}</h3>
+            </li>
+          {{/icons}}
+        </ul>  
+      </div>  
     </div>
     
   </script>
@@ -48,8 +63,8 @@
     <div class="page portfolio">{{{content}}}</div>
     
   </script>
-  <script id="resume" type="text/template">
-    <div class="page resume">{{{content}}}</div>  
+  <script id="blog" type="text/template">
+    <div class="page blog">{{{content}}}</div>  
     
   </script>
   <script id="contact" type="text/template">

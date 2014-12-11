@@ -15,7 +15,13 @@ html
 
   link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
 
+  //- Fonts  
+
   link(href="http://fonts.googleapis.com/css?family=Josefin+Slab", rel="stylesheet", type="text/css")  
+
+  link(href="http://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css")
+
+  link(href="http://fonts.googleapis.com/css?family=Overlock" rel="stylesheet" type="text/css")
 
   body
 
@@ -35,7 +41,7 @@ html
 
         li: a(href="/portfolio") Portfolio
 
-        li: a(href="/resume") Resume
+        li: a(href="/blog") Blog
 
         li: a(href="/contact") Contact
 
@@ -58,14 +64,27 @@ html
   script#about(type="text/template").
     <div class="page about">
       {{{profilePic}}}
-      <p><span id="about-heading">Helllo</span>, I am Tara Ocansey</p>
+      {{{aboutHeading}}}
+      {{{aboutParOne}}}      
+      {{{aboutParTwo}}} 
+      
+      <div id="icons">
+        <ul>
+          {{#icons}}
+            <li>
+              <img src="{{src}}" />
+              <h3>{{description}}</h3>
+            </li>
+          {{/icons}}
+        </ul>  
+      </div>  
     </div>
 
   script#portfolio(type="text/template").
     <div class="page portfolio">{{{content}}}</div>
 
-  script#resume(type="text/template").
-    <div class="page resume">{{{content}}}</div>  
+  script#blog(type="text/template").
+    <div class="page blog">{{{content}}}</div>  
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}</div>
