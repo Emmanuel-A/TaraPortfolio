@@ -227,7 +227,8 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<p>Blog Page</p>'
+        blogHeading: '<h2>A FASHION INSPIRATION: MY GETAWAY</h2>',
+        instagramLink: 'http://instagram.com/liveandflaneur/'
       });
 
     },
@@ -316,4 +317,29 @@ jQuery(function($) {
     var isLocal = url.match(/^#/)
     if(isLocal) { e.preventDefault(); App.router.navigate($(this).attr('href'), { trigger: true }); }
   });
+});
+
+// -----------------------------
+// Blog Page - Instagram API
+// 
+$.ajax({
+  type: "GET",
+  dataType: "jsonp",
+  url: "https://api.instagram.com/v1/users/352782834/?access_token=806401368.5aa13be.4a08df065cbb41469c9cc20041432d3b",
+  success: function(data) { 
+  $('.name').text(data.data.full_name);  
+  $('.username').text(data.data.username);
+  }
+});
+
+$.ajax({
+  type: "GET",
+  dataType: "jsonp",
+  cache: false,
+  url: "https://api.instagram.com/v1/users/352782834/media/recent/?client_id=72da0b22fc36442da70468668e662414",
+  success: function(data) {
+    for (var i = 0; i < 40; i++) {
+      $(".posts").append("<li><a target='_blank' href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></li>");      
+    }
+  }
 });

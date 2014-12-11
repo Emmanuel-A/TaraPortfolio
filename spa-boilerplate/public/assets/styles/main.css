@@ -131,37 +131,61 @@ a {
           font-size: 16px;
           color: #37725e; }
   /* line 142, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
-  .main .contact {
+  .main .blog {
     text-align: center;
     margin: 0 auto; }
     /* line 146, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    .main .blog h2 {
+      color: #d3a176;
+      font-family: 'Overlock', cursive;
+      font-size: 30px;
+      font-weight: lighter; }
+    /* line 152, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    .main .blog .username {
+      font-size: 17px; }
+    /* line 155, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    .main .blog .posts {
+      margin: auto;
+      padding: 20px 0 0 0; }
+      /* line 159, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+      .main .blog .posts li {
+        list-style: none;
+        display: inline-block;
+        width: 306px;
+        height: 306px;
+        margin: 0px 20px 20px 0px; }
+  /* line 168, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+  .main .contact {
+    text-align: center;
+    margin: 0 auto; }
+    /* line 172, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
     .main .contact h2 {
       color: #d3a176;
       font-family: 'Allura', cursive;
       font-size: 30px; }
-    /* line 151, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 177, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
     .main .contact .hello {
       font-family: 'Allura', cursive;
       font-size: 33px; }
-    /* line 155, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 181, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
     .main .contact #icons {
       width: 35%;
       margin: 0 auto; }
-      /* line 160, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+      /* line 186, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
       .main .contact #icons ul li {
         list-style: none;
         float: left;
         padding: 0 25px 0 0; }
-        /* line 165, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+        /* line 191, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
         .main .contact #icons ul li img {
           width: 60px;
           opacity: 0.3; }
-          /* line 168, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+          /* line 194, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
           .main .contact #icons ul li img:hover {
             border-radius: 50%;
             border: 3px solid teal;
             cursor: pointer; }
-    /* line 174, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 200, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
     .main .contact form {
       clear: both;
       font-weight: lighter;
@@ -169,7 +193,7 @@ a {
       font-size: 16px;
       color: #555;
       padding: 30px 0 0 0; }
-      /* line 182, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+      /* line 208, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
       .main .contact form input {
         height: 30px;
         width: 50%;
@@ -180,30 +204,31 @@ a {
         font-size: 16px;
         color: #555;
         outline: 0; }
-      /* line 193, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+      /* line 219, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
       .main .contact form #messageField {
         padding: 12px 0 130px 10px; }
-      /* line 196, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+      /* line 222, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
       .main .contact form .message {
         margin: 0 0 0 -23px; }
-    /* line 199, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+    /* line 225, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
     .main .contact #sendBtn {
       background: #deb2c0;
       color: #ffffff;
       font-size: 18px;
       font-weight: bolder;
       padding: 10px 100px;
-      margin: 10px 0 0 0; }
-      /* line 206, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+      margin: 10px 0 0 0;
+      letter-spacing: 1.5px; }
+      /* line 233, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
       .main .contact #sendBtn:hover {
         background: #555;
         opacity: 0.3;
         text-decoration: none; }
 
-/* line 212, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+/* line 239, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
 .footer {
   padding: 20px; }
-  /* line 215, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
+  /* line 242, /Users/ruthamponsah/Desktop/TaraPortfolio/TaraPortfolio/spa-boilerplate/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;
