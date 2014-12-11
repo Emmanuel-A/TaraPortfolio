@@ -41,7 +41,7 @@ html
 
         li: a(href="/portfolio") Portfolio
 
-        li: a(href="/blog") Blog
+        li: a(href="http://taraconrad.tumblr.com") Blog
 
         li: a(href="/contact") Contact
 
@@ -67,6 +67,7 @@ html
       {{{aboutHeading}}}
       {{{aboutParOne}}}      
       {{{aboutParTwo}}} 
+      {{{aboutParThree}}}      
       
       <div id="icons">
         <ul>
@@ -87,7 +88,13 @@ html
     <div class="page blog">{{{content}}}</div>  
 
   script#contact(type="text/template").
-    <div class="page contact">{{{content}}}</div>
+    <div class="page contact">
+      <form>
+        <p>Name:</p>
+        <p>Email:</p>
+        <p>Message:</p>
+      </form>
+    </div>  
 
   // -----------------------------
   // Libraries

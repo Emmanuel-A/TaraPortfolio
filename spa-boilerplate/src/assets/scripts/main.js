@@ -135,7 +135,8 @@ jQuery(function($) {
         profilePic: '<img src="../assets/images/profile-pic-02.png" alt="profile pic" style="width: 170px"/>',
         aboutHeading: '<h2><span class="hello">Hello</span>, I am Tara Ocansey.</h2>',
         aboutParOne: '<p>I am a freelance Fashion Stylist living in Toronto, Canada.</p>',
-        aboutParTwo: '<p>I am a creative, hardworking and motivated individual with progressive experience as well as developed strengths in the following areas:</p>',
+        aboutParTwo: '<p>I recieved my Bachelor of Commerce (B.Com.) in Fashion Management at Humber College in 2014.</p>',
+        aboutParThree: '<p>I am a creative, hardworking and motivated individual with progressive experience as well as developed strengths in the following areas:</p>',
         icons: [
           {
             src: "../assets/images/dress.png",
