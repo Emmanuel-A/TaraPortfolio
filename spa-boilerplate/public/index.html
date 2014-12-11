@@ -7,6 +7,7 @@
   <meta name="description" content="Portfolio site for Fashion Stylist, Tara Ocansey ">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" type="text/css">
   <body></body>
   <div class="wrapper">
     <header class="header">
@@ -22,6 +23,9 @@
       </ul>
     </header>
     <div class="main"></div>
+    <footer class="footer">
+      <p>Copyright &copy; 2014</p>
+    </footer>
   </div>
   <!-- ------------------------------->
   <!-- Templates-->
@@ -29,11 +33,15 @@
   <script id="home" type="text/template">
     <div class="page home">
       <div id="home-banner-img"></div>
+      {{{bannerText}}}
     </div>
     
   </script>
   <script id="about" type="text/template">
-    <div class="page about">{{{content}}}</div>
+    <div class="page about">
+      {{{profilePic}}}
+      <p><span id="about-heading">Helllo</span>, I am Tara Ocansey</p>
+    </div>
     
   </script>
   <script id="portfolio" type="text/template">

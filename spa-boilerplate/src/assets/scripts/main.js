@@ -93,7 +93,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        // content: '<img src="../assets/images/home-banner-01.png" alt="banner image" style="width: 100%;"/>'
+        bannerText: '<h1>Fashion Stylist</h1>'
       });
 
     },
@@ -132,7 +132,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<p>About Page</p>'
+        profilePic: '<img src="../assets/images/profile-pic-02.png" alt="profile pic" style="width: 170px"/>'
       });
 
     },

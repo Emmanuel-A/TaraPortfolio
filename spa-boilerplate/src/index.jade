@@ -15,6 +15,8 @@ html
 
   link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
 
+  link(href="http://fonts.googleapis.com/css?family=Josefin+Slab", rel="stylesheet", type="text/css")  
+
   body
 
   div.wrapper
@@ -39,9 +41,9 @@ html
 
     div.main
 
-    //- footer.footer
+    footer.footer
 
-    //-   p Copyright &copy; 2014
+      p Copyright &copy; 2014
 
   // -----------------------------
   // Templates
@@ -50,10 +52,14 @@ html
   script#home(type="text/template").
     <div class="page home">
       <div id="home-banner-img"></div>
+      {{{bannerText}}}
     </div>
 
   script#about(type="text/template").
-    <div class="page about">{{{content}}}</div>
+    <div class="page about">
+      {{{profilePic}}}
+      <p><span id="about-heading">Helllo</span>, I am Tara Ocansey</p>
+    </div>
 
   script#portfolio(type="text/template").
     <div class="page portfolio">{{{content}}}</div>
