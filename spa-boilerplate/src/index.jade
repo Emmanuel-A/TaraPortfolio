@@ -49,7 +49,7 @@ html
 
     footer.footer
 
-      p Tara Ocansey &copy; 2014
+      p &copy; Tara Ocansey 
 
   // -----------------------------
   // Templates
@@ -82,18 +82,28 @@ html
     </div>
 
   script#portfolio(type="text/template").
-    <div class="page portfolio">{{{content}}}</div>
+    <div class="page portfolio">
+      <div id="work">
+        <ul>
+          {{#work}}
+            <li>
+              <img src="{{src}}"><br/>
+            </li>
+          {{/work}}
+        </ul>  
+      </div> 
+    </div>
 
   script#blog(type="text/template").
     <div class="page blog">
       {{{blogHeading}}}
-      <span class="profile-pic"><img></img></span>
-      <a href="{{{instagramLink}}}"><span class="username"></span></a>
+      <a id="handle" href="#">@<span class="username"></span></a><br/>
+      <a id="instagramLink" href="{{{instagramLink}}}"><img src="{{{instagramIcon}}}"></img></a>
+      <span class="followedBy"></span>
       <ul class="posts">
       </ul>
     </div>  
     
-
   script#contact(type="text/template").
     <div class="page contact">
       {{{contactHeading}}}

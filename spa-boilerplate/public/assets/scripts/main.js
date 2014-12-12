@@ -188,9 +188,21 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<p>Portfolio Page</p>'
+      work: [
+          {
+            src: "../assets/images/AislePerfectWork.jpg",
+            description: "Selected outfits and jewellery pieces for photo shoot featured on Aisle Perfect website."
+          },
+          {
+            src: "../assets/images/VogueWork.jpg",
+            description: "Art directed and styled models for Women in Black editorial shoot."
+          },
+          {
+            src: "../assets/images/ZenMagWork.jpg",
+            description: "Styled models for Shar Oke Jewelry Photo Shoot. Worked side-by-side with jewellery designer and makeup artist. "
+          }
+        ]
       });
-
     },
 
     // Our Render Function
@@ -228,7 +240,8 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         blogHeading: '<h2>A FASHION INSPIRATION: MY GETAWAY</h2>',
-        instagramLink: 'http://instagram.com/liveandflaneur/'
+        instagramLink: 'http://instagram.com/liveandflaneur/',
+        instagramIcon: '../assets/images/instagram-icon.png'
       });
 
     },
@@ -322,13 +335,22 @@ jQuery(function($) {
 // -----------------------------
 // Blog Page - Instagram API
 // 
+
 $.ajax({
   type: "GET",
   dataType: "jsonp",
   url: "https://api.instagram.com/v1/users/352782834/?access_token=806401368.5aa13be.4a08df065cbb41469c9cc20041432d3b",
-  success: function(data) { 
-  $('.name').text(data.data.full_name);  
+  success: function(data) {   
   $('.username').text(data.data.username);
+  }
+});
+
+$.ajax({
+  type: "GET",
+  dataType: "jsonp",
+  url: "https://api.instagram.com/v1/users/352782834/?access_token=806401368.5aa13be.4a08df065cbb41469c9cc20041432d3b",
+  success: function(data) {   
+  $('.followedBy').text(data.data.counts.followed_by);
   }
 });
 

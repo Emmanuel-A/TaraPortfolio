@@ -26,7 +26,7 @@
     </header>
     <div class="main"></div>
     <footer class="footer">
-      <p>Tara Ocansey &copy; 2014</p>
+      <p>&copy; Tara Ocansey </p>
     </footer>
   </div>
   <!-- ------------------------------->
@@ -61,18 +61,28 @@
     
   </script>
   <script id="portfolio" type="text/template">
-    <div class="page portfolio">{{{content}}}</div>
+    <div class="page portfolio">
+      <div id="work">
+        <ul>
+          {{#work}}
+            <li>
+              <img src="{{src}}"><br/>
+            </li>
+          {{/work}}
+        </ul>  
+      </div> 
+    </div>
     
   </script>
   <script id="blog" type="text/template">
     <div class="page blog">
       {{{blogHeading}}}
-      <span class="profile-pic"><img></img></span>
-      <a href="{{{instagramLink}}}"><span class="username"></span></a>
+      <a id="handle" href="#">@<span class="username"></span></a><br/>
+      <a id="instagramLink" href="{{{instagramLink}}}"><img src="{{{instagramIcon}}}"></img></a>
+      <span class="followedBy"></span>
       <ul class="posts">
       </ul>
     </div>  
-    
     
   </script>
   <script id="contact" type="text/template">

@@ -79,7 +79,6 @@ a
   padding: 0
   float: right
 
-
   li
     margin: 0
     padding: 0
@@ -109,13 +108,12 @@ a
       height: 500px
       background: url(../images/home-banner-01.png) no-repeat
       background-position: center
-      background-size: 100%
-
+      
     h1  
       font-family: 'Josefin Slab', serif
       background: #ffffff;
       opacity: 0.9;
-      bottom: 110px;
+      bottom: 80px;
       position: absolute;
       text-align: center;
       width: 70%;
@@ -166,6 +164,28 @@ a
           font-size: 16px
           color: $linkColor 
 
+
+  // -----------------------------
+  // Portfolio
+  // -----------------------------
+
+  .portfolio
+    text-align: center
+    #work
+      margin: 0 auto
+
+      ul
+        list-style: none
+
+        li
+          display: inline-block
+          
+          img
+            border: 1px solid #efefef
+            padding: 5px
+            margin: 20px
+            width: 90%
+
   // -----------------------------
   // Blog
   // -----------------------------
@@ -173,7 +193,23 @@ a
   .blog
     text-align: center
     margin: 0 auto
+    
+    .ig-background
+      background: #555
+      opacity: 0.5
 
+    #instagramLink
+      padding: 20px 5px 0  0
+      opacity: 0.6
+    
+    #handle
+      &:hover
+        text-decoration: none  
+        cursor: default
+
+    .followedBy
+      font-size: 17px
+   
     h2
       color: #d3a176
       font-family: 'Overlock', cursive
@@ -226,9 +262,7 @@ a
             width: 60px
             opacity: 0.3
             &:hover
-              border-radius: 50% 
-              border: 3px solid teal
-              cursor: pointer
+              opacity: 0.5
 
 
     form
@@ -280,4 +314,4 @@ a
     margin: 0
     padding: 0
     font-size: 12px
-
+   
