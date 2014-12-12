@@ -188,6 +188,17 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
+      content: [
+          {
+            paragraphs: 'I have worked side-by-side with makeup artists and jewellery designers in various photo shoots.',  
+          },
+          {
+            paragraphs: 'Some of my work has been featured in online magazines and print ads like Zen Magazine, Aisle Perfect and Women In Black, a mock Vogue magazine.',  
+          },
+          {
+            paragraphs: 'Here is some of my work:' 
+          },
+        ],
       work: [
           {
             src: "../assets/images/AislePerfectWork.jpg",

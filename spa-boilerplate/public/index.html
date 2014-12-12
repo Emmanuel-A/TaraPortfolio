@@ -62,6 +62,10 @@
   </script>
   <script id="portfolio" type="text/template">
     <div class="page portfolio">
+      {{#content}}
+        <p>{{paragraphs}}</p>
+      {{/content}}
+    
       <div id="work">
         <ul>
           {{#work}}
